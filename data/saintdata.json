@@ -1,127 +1,152 @@
 [
     {
-        "name": "Saint Francis of Assisi",
-        "feast_day": "October 4",
-        "description": "Saint Francis of Assisi was an Italian Catholic friar and preacher. He founded the Franciscan Order and is known for his love of nature and animals."
+        "name": "Saint Joan of Arc",
+        "feast_day": "May 30",
+        "description": "Saint Joan of Arc was a French heroine who led armies during the Hundred Years' War and was later canonized for her faith and courage."
     },
     {
-        "name": "Saint Teresa of Calcutta",
-        "feast_day": "September 5",
-        "description": "Saint Teresa of Calcutta, also known as Mother Teresa, was a missionary nun who dedicated her life to serving the poor and sick in the slums of Kolkata, India."
+        "name": "Saint Anthony of Padua",
+        "feast_day": "June 13",
+        "description": "Saint Anthony of Padua was a Franciscan priest known for his powerful preaching and is the patron saint of lost items."
     },
     {
-        "name": "Saint Augustine of Hippo",
-        "feast_day": "August 28",
-        "description": "Saint Augustine of Hippo was an early Christian theologian and philosopher, who became a bishop and is one of the most important Church Fathers in Western Christianity."
+        "name": "Saint Maximilian Kolbe",
+        "feast_day": "August 14",
+        "description": "Saint Maximilian Kolbe was a Polish priest who gave his life in place of another prisoner at Auschwitz during World War II."
     },
     {
-        "name": "Saint Joseph",
-        "feast_day": "March 19",
-        "description": "Saint Joseph, the husband of Mary and earthly father of Jesus, is the patron saint of workers and the universal Church."
+        "name": "Saint Gregory the Great",
+        "feast_day": "September 3",
+        "description": "Saint Gregory I, also known as Gregory the Great, was pope and a Doctor of the Church, known for his reforms and writings."
     },
     {
-        "name": "Saint Catherine of Siena",
-        "feast_day": "April 29",
-        "description": "Saint Catherine of Siena was an Italian Dominican Tertiary, a mystic, and a Scholastic philosopher, recognized as one of the two patron saints of Italy."
+        "name": "Saint Kateri Tekakwitha",
+        "feast_day": "July 14",
+        "description": "Saint Kateri Tekakwitha was the first Native American to be canonized, known for her piety and devotion."
     },
     {
-        "name": "Saint John Paul II",
-        "feast_day": "October 22",
-        "description": "Saint John Paul II was the pope of the Catholic Church from 1978 until his death in 2005. He is remembered for his role in the fall of communism and for his extensive travels."
+        "name": "Saint Polycarp",
+        "feast_day": "February 23",
+        "description": "Saint Polycarp was a 2nd-century bishop of Smyrna and martyr, one of the Apostolic Fathers."
     },
     {
-        "name": "Saint Thérèse of Lisieux",
-        "feast_day": "October 1",
-        "description": "Saint Thérèse of Lisieux, known as the Little Flower, was a French Carmelite nun who became widely known for her simple and profound spirituality."
+        "name": "Saint Cecilia",
+        "feast_day": "November 22",
+        "description": "Saint Cecilia is the patron saint of music and musicians, remembered for her faith and martyrdom."
     },
     {
-        "name": "Saint Ignatius of Loyola",
-        "feast_day": "July 31",
-        "description": "Saint Ignatius of Loyola was a Spanish Basque Catholic priest and theologian who founded the Society of Jesus (the Jesuits)."
+        "name": "Saint Jerome",
+        "feast_day": "September 30",
+        "description": "Saint Jerome was a biblical scholar who translated the Bible into Latin (the Vulgate)."
     },
     {
-        "name": "Saint Francis Xavier",
-        "feast_day": "December 3",
-        "description": "Saint Francis Xavier was a co-founder of the Society of Jesus and a missionary who played a key role in spreading Christianity in Asia."
+        "name": "Saint Ambrose",
+        "feast_day": "December 7",
+        "description": "Saint Ambrose was bishop of Milan and one of the four original Doctors of the Church."
     },
     {
-        "name": "Saint Benedict of Nursia",
-        "feast_day": "July 11",
-        "description": "Saint Benedict of Nursia was a Christian saint, the founder of the Benedictine Order, and is known for his Rule that guided many monastic communities."
+        "name": "Saint Scholastica",
+        "feast_day": "February 10",
+        "description": "Saint Scholastica was the twin sister of Saint Benedict and founded a women's monastic community."
     },
     {
-        "name": "Saint Anne",
-        "feast_day": "July 26",
-        "description": "Saint Anne was the mother of the Virgin Mary and grandmother of Jesus. She is venerated in both Eastern and Western Christianity."
+        "name": "Saint Isidore the Farmer",
+        "feast_day": "May 15",
+        "description": "Saint Isidore was a Spanish farmer known for his piety, humility, and miracles related to agriculture."
     },
     {
-        "name": "Saint Elizabeth Ann Seton",
-        "feast_day": "January 4",
-        "description": "Saint Elizabeth Ann Seton was the first native-born American to be canonized by the Catholic Church. She founded the Sisters of Charity."
+        "name": "Saint Blaise",
+        "feast_day": "February 3",
+        "description": "Saint Blaise was a bishop and martyr, best known for his protection against throat ailments."
     },
     {
-        "name": "Saint Thomas Aquinas",
-        "feast_day": "January 28",
-        "description": "Saint Thomas Aquinas was an Italian Dominican friar and theologian, renowned for his synthesis of Christian theology with Aristotelian philosophy."
+        "name": "Saint Lucy",
+        "feast_day": "December 13",
+        "description": "Saint Lucy was a Christian martyr and is the patron saint of the blind and those with eye problems."
     },
     {
-        "name": "Saint Rita of Cascia",
-        "feast_day": "May 22",
-        "description": "Saint Rita of Cascia was an Italian widow and Augustinian nun, known for her devotion, patience, and suffering."
+        "name": "Saint Martin of Tours",
+        "feast_day": "November 11",
+        "description": "Saint Martin was a Roman soldier turned bishop known for his charity and humility."
     },
     {
-        "name": "Saint Bernadette Soubirous",
-        "feast_day": "April 16",
-        "description": "Saint Bernadette Soubirous is best known for her visions of the Virgin Mary at Lourdes, which led to the development of the Lourdes shrine."
+        "name": "Saint John the Baptist",
+        "feast_day": "June 24",
+        "description": "Saint John the Baptist was the forerunner of Christ and baptized Jesus in the Jordan River."
     },
     {
-        "name": "Saint Padre Pio",
-        "feast_day": "September 23",
-        "description": "Saint Padre Pio was an Italian Capuchin friar, priest, and mystic known for his stigmata and healing miracles."
+        "name": "Saint John Bosco",
+        "feast_day": "January 31",
+        "description": "Saint John Bosco was a priest who dedicated his life to educating and caring for disadvantaged youth."
     },
     {
-        "name": "Saint Clare of Assisi",
-        "feast_day": "August 11",
-        "description": "Saint Clare of Assisi was an Italian saint and one of the first followers of Saint Francis. She founded the Order of Poor Ladies, later called the Poor Clares."
+        "name": "Saint Dominic",
+        "feast_day": "August 8",
+        "description": "Saint Dominic was the founder of the Dominican Order, dedicated to preaching and teaching."
     },
     {
-        "name": "Saint Louis de Montfort",
-        "feast_day": "April 28",
-        "description": "Saint Louis de Montfort was a French Roman Catholic priest, missionary, and theologian known for his devotion to the Blessed Virgin Mary."
+        "name": "Saint Jerome Emiliani",
+        "feast_day": "February 8",
+        "description": "Saint Jerome Emiliani is the patron saint of orphans and abandoned children."
     },
     {
-        "name": "Saint James the Greater",
-        "feast_day": "July 25",
-        "description": "Saint James the Greater was one of the twelve apostles of Jesus and the first apostle to be martyred."
+        "name": "Saint Rose of Lima",
+        "feast_day": "August 23",
+        "description": "Saint Rose of Lima was the first person born in the Americas to be canonized, known for her life of prayer and penance."
     },
     {
-        "name": "Saint Mark the Evangelist",
-        "feast_day": "April 25",
-        "description": "Saint Mark the Evangelist is traditionally considered the author of the Gospel of Mark."
+        "name": "Saint Lawrence",
+        "feast_day": "August 10",
+        "description": "Saint Lawrence was a Roman deacon and martyr who distributed alms to the poor."
     },
     {
-        "name": "Saint Matthew the Evangelist",
-        "feast_day": "September 21",
-        "description": "Saint Matthew the Evangelist was one of the twelve apostles and is traditionally credited with the authorship of the Gospel of Matthew."
+        "name": "Saint John of the Cross",
+        "feast_day": "December 14",
+        "description": "Saint John of the Cross was a Carmelite friar, mystic, and Doctor of the Church, known for his writings on the spiritual life."
     },
     {
-        "name": "Saint Monica",
-        "feast_day": "August 27",
-        "description": "Saint Monica was the mother of Saint Augustine of Hippo and is known for her unwavering devotion and prayers for her son's conversion."
+        "name": "Saint Teresa of Ávila",
+        "feast_day": "October 15",
+        "description": "Saint Teresa was a Carmelite reformer and mystic, and one of the first women to be named a Doctor of the Church."
     },
     {
-        "name": "Saint Bartholomew",
-        "feast_day": "August 24",
-        "description": "Saint Bartholomew was one of the twelve apostles of Jesus and is traditionally identified as Nathanael."
+        "name": "Saint John the Evangelist",
+        "feast_day": "December 27",
+        "description": "Saint John the Evangelist was one of the Twelve Apostles and is traditionally credited with the Gospel of John and Revelation."
     },
     {
-        "name": "Saint Andrew",
-        "feast_day": "November 30",
-        "description": "Saint Andrew was one of the twelve apostles and is the patron saint of Scotland, Greece, and Russia."
+        "name": "Saint Peter",
+        "feast_day": "June 29",
+        "description": "Saint Peter was one of the Twelve Apostles and the first pope, known for his leadership and martyrdom."
     },
     {
-        "name": "Saint George",
-        "feast_day": "April 23",
-        "description": "Saint George was a Roman soldier who became a Christian martyr. He is widely known as the patron saint of England."
+        "name": "Saint Paul",
+        "feast_day": "June 29",
+        "description": "Saint Paul was a former persecutor of Christians who became one of Christianity's greatest missionaries and writers."
+    },
+    {
+        "name": "Saint Anthony the Great",
+        "feast_day": "January 17",
+        "description": "Saint Anthony the Great was a Christian monk from Egypt and is considered the father of monasticism."
+    },
+    {
+        "name": "Saint Catherine Labouré",
+        "feast_day": "November 28",
+        "description": "Saint Catherine Labouré received the visions of the Miraculous Medal from the Virgin Mary."
+    },
+    {
+        "name": "Saint Maria Goretti",
+        "feast_day": "July 6",
+        "description": "Saint Maria Goretti is one of the youngest canonized saints and is known for her purity and forgiveness of her attacker."
+    },
+    {
+        "name": "Saint Juan Diego",
+        "feast_day": "December 9",
+        "description": "Saint Juan Diego was the indigenous man who witnessed the apparition of Our Lady of Guadalupe in Mexico."
+    },
+    {
+        "name": "Saint Ephrem the Syrian",
+        "feast_day": "June 9",
+        "description": "Saint Ephrem was a deacon and poet-theologian of the early Church, revered for his hymns and writings."
     }
 ]

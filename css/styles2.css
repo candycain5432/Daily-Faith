@@ -7,18 +7,19 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #471337;
+    background-color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; /* Align content vertically */
     height: 100vh;
     margin: 0;
+    text-align: center;
 }
 
 /* Title at the very top of the page */
 .title {
-    background-color: #ff7249; /* Warm orange background */
+    background-color: #252323; /* Warm orange background */
     color: white;
     border-radius: 15px;
     padding: 20px;
@@ -38,13 +39,14 @@ body {
 
 /* Main container for saint info */
 .saint-container {
-    background-color: #ff5349; /* Light background with slight transparency */
+    background-color: #252323; /* Light background with slight transparency */
     border-radius: 15px; /* Rounded edges */
     padding: 20px; /* Inner spacing */
     max-width: 80%; /* Make it responsive */
     text-align: center; /* Center the text */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add a nice shadow */
     margin: 100px auto; /* Center the container and add spacing */
+    color: white;
 }
 
 
@@ -98,12 +100,13 @@ body {
 }
 
 .prayer-box {
-    background: #ff5349;
+    background: #252323;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     width: 60%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
 }
 
 .back-button {
@@ -122,26 +125,33 @@ body {
 }
 
 .back-button button {
-    color: #ff7249;
-    font-size: 1.2rem;
-    text-decoration: none;
-    padding: 10px 20px;
-    border: 2px solid #ff7249;
-    border-radius: 5px;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .back-button button:hover {
     background-color: #3760c7;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.1);
+    
 }
 
 .quote-container {
-    background-color: #ff5349; /* Light background with slight transparency */
+    background-color: #252323; /* Light background with slight transparency */
     border-radius: 15px; /* Rounded edges */
     padding: 20px; /* Inner spacing */
     max-width: 80%; /* Make it responsive */
     text-align: center; /* Center the text */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add a nice shadow */
     margin: 100px auto; /* Center the container and add spacing */
+    color: white;
 }
 
 
@@ -153,5 +163,5 @@ body {
     border: 2px solid #ff7249; /* Border to match title */
     max-width: 500px; /* Limit width */
     text-align: center;
-    color: #471337;
+    color: white;
 }
