@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Quote - Catholic Website</title>
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+
+    <!-- Title Section -->
+    <div class="title">
+        <h1>Catholic Website</h1>
+    </div>
+
+    <!-- Daily Quote Section -->
+    <div class="quote-container">
+        <div class="quote-box">
+            <p id="quote">Loading quote...</p>
+            <p id="author"></p>
+        </div>
+    </div>
+
+    <!-- Back Button -->
+    <div class="back-button">
+        <button onclick="window.location.href='index.html'">Back to Main Page</button>
+    </div>
+
+    <!-- Fetch and Display Quote -->
+    <script>
+       fetch('data/quotedata.json')
+            .then(response => response.json())
+            .then(data => {
+                // Get today's date
+                const today = new Date();
+                const dayOfYear = today.getDate();  // Get the day of the month (1-31)
+
+                // Choose a quote based on the day of the month
+                const quoteIndex = dayOfYear % data.length; 
+
+                // Set the quote and author in the HTML
+                document.getElementById('quote').textContent = `"${data[quoteIndex].quote}"`;
+                document.getElementById('author').textContent = `- ${data[quoteIndex].author}`;
+            })
+            .catch(error => {
+                console.error('Error loading quote:', error);
+                document.getElementById('quote').textContent = 'Error loading quote.';
+            });
+    </script>
+
+</body>
+</html>

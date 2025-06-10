@@ -1,0 +1,195 @@
+    /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #471337;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Align content vertically */
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+/* Title at the very top of the page */
+.title {
+    background-color: #ff7249; /* Warm orange background */
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: calc(100% - 40px); /* Reduce width to make space on the sides */
+    position: absolute;
+    top: 30px; /* Slightly off the top */
+    left: 20px; /* Space from the left side */
+    right: 20px; /* Space from the right side */
+    border: 2px solid #ffffff; /* White border around the title */
+}
+
+.title h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Main container for buttons and image */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 120px; /* Add space for the title */
+    gap: 40px; /* Add space between the image and buttons */
+}
+
+/* Left and Right button containers */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center; /* Center buttons vertically */
+    margin-right: -90px; /* Adjusted margin for better spacing */
+    margin-left: -90px;
+}
+
+/* Central image container */
+.image-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* Image without a border but with rounded corners */
+.image-container img {
+    max-width: 40%; /* Make the image smaller */
+    height: auto;
+    border-radius: 20px; /* Rounded edges for the image */
+    object-fit: contain; /* Ensure the entire image is shown without cropping */
+}
+
+/* Button styles */
+button {
+    padding: 15px;
+    font-size: 1.2rem;
+    color: white;
+    border: 2px solid #ffffff; /* White border around buttons */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px; /* Set width to make buttons uniform */
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Different button colors */
+.btn1 { background-color: #b13254; }
+.btn2 { background-color: #ff5349; }
+.btn3 { background-color: #ff9248; }
+.btn4 { background-color: #b13254; }
+.btn5 { background-color: #ff5349; }
+.btn6 { background-color: #ff9248; }
+
+/* 📌 Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+        .title {
+        font-size: 1.8rem; /* Slightly reduce size for mobile */
+        width: 95%; /* Take more width on smaller screens */
+    }
+    
+    .title h1 {
+        font-size: 1.5rem; /* Adjust title size */
+        white-space: normal; /* Allow text wrapping on small screens */
+    }
+
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 100px; /* Make space for the title */
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px; /* Push buttons down */
+    }
+
+    .image-container {
+        margin-top: 20px; /* Adjust spacing */
+    }
+
+    button {
+        width: 200px; /* Make buttons more touch-friendly */
+        font-size: 1rem;
+    }
+}
+
+
+a {
+    color: dodgerblue;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding-top: 40px; /* Prevent content from being covered */
+        }
+
+        .news-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #ff4500;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            z-index: 1000;
+            height: 40px;
+        }
+
+        .news-wrapper {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+        }
+
+        .news-content {
+            display: flex;
+            white-space: nowrap;
+            animation: scrollText 5s linear infinite;
+        }
+
+        /* Duplicate content for seamless looping */
+        .news-content span {
+            display: inline-block;
+            padding-right: 100px; /* Space between messages */
+        }
+
+        /* Keyframes for truly seamless scrolling */
+        @keyframes scrollText {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        

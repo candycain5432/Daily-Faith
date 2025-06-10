@@ -1,0 +1,157 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #471337;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Align content vertically */
+    height: 100vh;
+    margin: 0;
+}
+
+/* Title at the very top of the page */
+.title {
+    background-color: #ff7249; /* Warm orange background */
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: calc(100% - 40px); /* Reduce width to make space on the sides */
+    position: absolute;
+    top: 30px; /* Slightly off the top */
+    left: 20px; /* Space from the left side */
+    right: 20px; /* Space from the right side */
+    border: 2px solid #ffffff; /* White border around the title */
+}
+
+.title h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Main container for saint info */
+.saint-container {
+    background-color: #ff5349; /* Light background with slight transparency */
+    border-radius: 15px; /* Rounded edges */
+    padding: 20px; /* Inner spacing */
+    max-width: 80%; /* Make it responsive */
+    text-align: center; /* Center the text */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add a nice shadow */
+    margin: 100px auto; /* Center the container and add spacing */
+}
+
+
+/* Container for saint text */
+.saint-text-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #ff7249; /* Border to match title */
+    max-width: 500px; /* Limit width */
+    text-align: center;
+    color: #471337;
+}
+
+/* Text styling */
+#saint-name {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#saint-info {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Back to main page link */
+.back-button {
+    margin-top: 30px;
+}
+
+.back-link {
+    color: #ff7249;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #ff7249;
+    border-radius: 5px;
+}
+
+.back-link:hover {
+    background-color: #ff7249;
+    color: white;
+}
+
+.prayer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.prayer-box {
+    background: #ff5349;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.back-link:hover {
+    background-color: #45a049;
+}
+
+.back-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-button button {
+    color: #ff7249;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #ff7249;
+    border-radius: 5px;
+}
+
+.back-button button:hover {
+    background-color: #3760c7;
+}
+
+.quote-container {
+    background-color: #ff5349; /* Light background with slight transparency */
+    border-radius: 15px; /* Rounded edges */
+    padding: 20px; /* Inner spacing */
+    max-width: 80%; /* Make it responsive */
+    text-align: center; /* Center the text */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add a nice shadow */
+    margin: 100px auto; /* Center the container and add spacing */
+}
+
+
+/* Container for saint text */
+.quote-text-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #ff7249; /* Border to match title */
+    max-width: 500px; /* Limit width */
+    text-align: center;
+    color: #471337;
+}

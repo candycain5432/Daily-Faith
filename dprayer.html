@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catholic Website - Daily Prayer</title>
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+
+    <!-- Title Section -->
+    <div class="title">
+        <h1>Catholic Website</h1>
+    </div>
+
+    <!-- Daily Prayer Section -->
+    <div class="prayer-container">
+        <div class="prayer-box">
+            <p id="prayer">Loading prayer...</p>
+        </div>
+    </div>
+
+    <!-- Back to Main Page Button -->
+    <div class="back-button">
+        <button onclick="window.location.href='index.html'">Back to Main Page</button>
+    </div>
+    
+    <!-- Fetch and Display Prayer -->
+    <script>
+       fetch('data/prayerdata.json')
+    .then(response => response.json())
+    .then(data => {
+        // Get today's date
+        const today = new Date();
+        const dayOfYear = today.getDate();  // Get the day of the month (1-31)
+
+        // Choose a prayer based on the day of the month (wrap around if the prayers exceed 31)
+        const prayerIndex = dayOfYear % data.length; // This ensures the prayers loop if there are more than 31
+
+        // Set the prayer in the HTML
+        document.getElementById('prayer').textContent = `"${data[prayerIndex].prayer}"`;
+    })
+    .catch(error => {
+        console.error('Error loading prayer:', error);
+        document.getElementById('prayer').textContent = 'Error loading prayer.';
+    });
+
+    </script>
+
+</body>
+</html>

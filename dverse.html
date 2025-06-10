@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Bible Verse</title>
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+
+    <!-- Title Section -->
+    <div class="title">
+        <h1>Daily Bible Verse</h1>
+    </div>
+
+    <!-- Bible Verse Container -->
+    <div class="quote-container">
+        <div class="verse-box">
+            <p id="verse">Loading verse...</p>
+            <p id="reference"></p>
+        </div>
+    </div>
+
+    <!-- Back Button -->
+    <div class="back-button">
+        <button onclick="window.location.href='index.html'">Back to Main Page</button>
+    </div>
+
+    <!-- Fetch and Display Bible Verse -->
+    <script>
+        fetch('data/versedata.json')
+        .then(response => response.json())
+        .then(data => {
+            const today = new Date();
+            const dayOfYear = today.getDate();
+            const verseIndex = dayOfYear % data.length; // Loop through verses
+
+            document.getElementById('verse').textContent = `"${data[verseIndex].verse}"`;
+            document.getElementById('reference').textContent = `- ${data[verseIndex].reference}`;
+        })
+        .catch(error => {
+            console.error('Error loading verse:', error);
+            document.getElementById('verse').textContent = 'Error loading verse.';
+        });
+    </script>
+
+</body>
+</html>

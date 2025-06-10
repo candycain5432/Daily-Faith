@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Saint</title>
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+
+    <!-- Title Section -->
+    <div class="title">
+        <h1>Daily Saint</h1>
+    </div>
+
+    <!-- Saint Container -->
+    <div class="saint-container">
+        <div class="saint-box">
+            <h2 id="saint-name">Loading...</h2>
+            <p><strong>Feast Day:</strong> <span id="feast-day"></span></p>
+            <p id="saint-description"></p>
+        </div>
+    </div>
+
+    <!-- Back Button -->
+    <div class="back-button">
+        <button onclick="window.location.href='index.html'">Back to Main Page</button>
+    </div>
+
+    <!-- Fetch and Display Saint -->
+    <script>
+        fetch('data/saintdata.json')
+        .then(response => response.json())
+        .then(data => {
+            // Get today's date
+            const today = new Date();
+            const dayOfYear = today.getDate(); // Get day of the month (1-31)
+
+            // Select a saint based on the day of the month (loops if data has fewer than 31 saints)
+            const saintIndex = dayOfYear % data.length;
+
+            // Display saint data
+            document.getElementById('saint-name').textContent = data[saintIndex].name;
+            document.getElementById('feast-day').textContent = data[saintIndex].feast_day;
+            document.getElementById('saint-description').textContent = data[saintIndex].description;
+        })
+        .catch(error => {
+            console.error('Error loading saint:', error);
+            document.getElementById('saint-name').textContent = 'Error loading saint.';
+        });
+    </script>
+
+</body>
+</html>
