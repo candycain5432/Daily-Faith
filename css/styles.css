@@ -1,4 +1,4 @@
-    /* Reset some default styles */
+ /* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
@@ -8,29 +8,29 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; /* Align content vertically */
-    height: 100vh;
-    margin: 0;
+    display: block; /* Stop flex from messing with vertical layout */
     text-align: center;
+    margin: 0;
+    padding-top: 80px; /* Make room for the fixed title */
 }
+
 
 /* Title at the very top of the page */
 .title {
-    background-color: #252323; /* Warm orange background */
+    background-color: #252323;
     color: white;
     border-radius: 15px;
     padding: 20px;
     text-align: center;
-    width: calc(100% - 40px); /* Reduce width to make space on the sides */
-    position: absolute;
-    top: 30px; /* Slightly off the top */
-    left: 20px; /* Space from the left side */
-    right: 20px; /* Space from the right side */
-    border: 2px solid #ffffff; /* White border around the title */
+    width: calc(100% - 40px);
+    position: fixed;
+    top: 40px; /* Below the news bar */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    border: 2px solid #ffffff;
 }
+
 
 .title h1 {
     font-size: 2.5rem;
@@ -42,10 +42,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
     width: 100%;
-    margin-top: 120px; /* Add space for the title */
-    gap: 40px; /* Add space between the image and buttons */
+    margin-top: 200px; /* Add space to clear the title */
+    gap: 40px;
 }
+
 
 /* Left and Right button containers */
 .buttons {
@@ -195,4 +198,17 @@ body {
             }
         }
 
-        
+        .close-btn {
+    background: transparent;
+    border: none;
+    background-color: lightgray;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    height: 100%; /* Match height of news bar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    border-radius: 10%;
+}
