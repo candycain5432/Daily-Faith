@@ -72,6 +72,10 @@ body {
     object-fit: contain; /* Ensure the entire image is shown without cropping */
 }
 
+.btn.btn3 {
+    background-color: rgb(255, 255, 36);
+}
+
 /* Button styles */
 button {
 padding: 1rem 1.5rem;
