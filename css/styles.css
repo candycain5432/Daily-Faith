@@ -8,7 +8,8 @@
 :root {
     --primary-bg: #1f1f1f;
     --card-bg: #2a2a2a;
-    --accent-color: #ffd43b;
+    --accent-color: #8a3ffc; /* Purple accent */
+    --accent-color-hover: #a06fff; /* Lighter purple for hover */
     --text-light: #ffffff;
     --text-muted: #bbbbbb;
     --font-main: 'Segoe UI', Arial, sans-serif;
@@ -92,7 +93,7 @@ button {
 }
 
 button:hover {
-    background: var(--accent-color);
+    background: var(--accent-color-hover);
     color: #000;
     transform: translateY(-3px);
     box-shadow: 0 6px 16px rgba(0,0,0,0.5);
@@ -104,7 +105,7 @@ button:hover {
 }
 
 .btn.btn3:hover {
-    background: #ffe05c;
+    background: var(--accent-color-hover);
 }
 
 /* Center image */
