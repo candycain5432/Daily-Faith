@@ -147,3 +147,19 @@ button:hover {
         width: 200px;
     }
 }
+
+
+.hide-scrollbar-but-allow-scrolling {
+  /* For Internet Explorer and Edge */
+  -ms-overflow-style: none;
+
+  /* For Firefox */
+  scrollbar-width: none;
+
+  /* For Chrome, Safari, and Opera (using a pseudo-element) */
+  overflow-y: scroll; /* Ensure content can scroll vertically */
+}
+
+.hide-scrollbar-but-allow-scrolling::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar for WebKit browsers */
+}
