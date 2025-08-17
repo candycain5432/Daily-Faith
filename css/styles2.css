@@ -8,6 +8,10 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #000000;
+    background-image: 
+        linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,17 +23,20 @@ body {
 
 /* Title at the very top of the page */
 .title {
-    background-color: #252323; /* Warm orange background */
+    background-color: #252323; /* dark background */
     color: white;
     border-radius: 15px;
     padding: 20px;
     text-align: center;
-    width: calc(100% - 40px); /* Reduce width to make space on the sides */
-    position: absolute;
-    top: 30px; /* Slightly off the top */
-    left: 20px; /* Space from the left side */
-    right: 20px; /* Space from the right side */
-    border: 2px solid #ffffff; /* White border around the title */
+    width: calc(100% - 40px);
+    max-width: 900px;
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #b392f7; /* purple border */
+    box-sizing: border-box;
+    z-index: 1000;
 }
 
 .title h1 {
@@ -39,26 +46,25 @@ body {
 
 /* Main container for saint info */
 .saint-container {
-    background-color: #252323; /* Light background with slight transparency */
-    border-radius: 15px; /* Rounded edges */
-    padding: 20px; /* Inner spacing */
-    max-width: 80%; /* Make it responsive */
-    text-align: center; /* Center the text */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add a nice shadow */
-    margin: 100px auto; /* Center the container and add spacing */
+    background-color: #252323;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 80%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 140px auto 100px; /* add top margin so content clears fixed title */
     color: white;
 }
-
 
 /* Container for saint text */
 .saint-text-container {
     background-color: white;
     padding: 30px;
     border-radius: 15px;
-    border: 2px solid #ff7249; /* Border to match title */
-    max-width: 500px; /* Limit width */
+    border: 2px solid #b392f7; /* purple border */
+    max-width: 500px;
     text-align: center;
-    color: #471337;
+    color: #4b367c; /* deep purple text */
 }
 
 /* Text styling */
@@ -76,19 +82,21 @@ body {
 /* Back to main page link */
 .back-button {
     margin-top: 30px;
+    text-align: center;
 }
 
 .back-link {
-    color: #ff7249;
+    color: #b392f7;
     font-size: 1.2rem;
     text-decoration: none;
     padding: 10px 20px;
-    border: 2px solid #ff7249;
+    border: 2px solid #b392f7;
     border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .back-link:hover {
-    background-color: #ff7249;
+    background-color: #b392f7;
     color: white;
 }
 
@@ -109,21 +117,7 @@ body {
     color: white;
 }
 
-.back-button {
-    text-align: center;
-    margin-top: 20px;
-}
-
-
-.back-link:hover {
-    background-color: #45a049;
-}
-
-.back-button {
-    text-align: center;
-    margin-top: 20px;
-}
-
+/* Back button styling */
 .back-button button {
     padding: 1rem 1.5rem;
     font-size: 1rem;
@@ -137,31 +131,30 @@ body {
 }
 
 .back-button button:hover {
-    background-color: #3760c7;
+    background-color: #8a3ffc; /* purple hover */
     transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.1);
-    
+    box-shadow: 0 8px 15px rgba(138, 63, 252, 0.3);
 }
 
+/* Quote container */
 .quote-container {
-    background-color: #252323; /* Light background with slight transparency */
-    border-radius: 15px; /* Rounded edges */
-    padding: 20px; /* Inner spacing */
-    max-width: 80%; /* Make it responsive */
-    text-align: center; /* Center the text */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Add a nice shadow */
-    margin: 100px auto; /* Center the container and add spacing */
+    background-color: #252323;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 80%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 100px auto;
     color: white;
 }
 
-
-/* Container for saint text */
+/* Container for quote text */
 .quote-text-container {
     background-color: white;
     padding: 30px;
     border-radius: 15px;
-    border: 2px solid #ff7249; /* Border to match title */
-    max-width: 500px; /* Limit width */
+    border: 2px solid #b392f7; /* purple border */
+    max-width: 500px;
     text-align: center;
-    color: white;
+    color: #4b367c; /* deep purple text */
 }
