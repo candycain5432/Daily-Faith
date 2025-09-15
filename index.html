@@ -1,61 +1,562 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8M98YJ96H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Y8M98YJ96H');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/gjXRmBhD/240-F-416442499-Ytct-TITf-S3-M7-SH27pi-B8-MSj-XMblu-Hngg.png">
-    <title>Daily Faith</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=all_inclusive" />
+    <title>In Remembrance of Charlie Kirk - Conservative Leader & Activist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.7;
+            color: #e2e8f0;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d30 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Memorial Banner */
+        .memorial-banner {
+            background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+            color: #971a0a;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-bottom: 2px solid #0b4bd3;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            color: #e2e8f0;
+            padding: 60px 0;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border-bottom: 3px solid #971a0a;
+        }
+        
+        .header h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            color: #ffffff;
+        }
+        
+        .memorial-dates {
+            font-size: 1.2rem;
+            color: #0b4bd3;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .header .subtitle {
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            opacity: 0.9;
+            font-weight: 300;
+            margin-bottom: 30px;
+            color: #cbd5e0;
+        }
+        
+        .video-link {
+            display: inline-block;
+            background: linear-gradient(45deg, #ffd93d, #ff6b6b);
+            color: #1a1a1a;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(255, 217, 61, 0.4);
+            border: 3px solid rgba(255, 215, 0, 0.5);
+        }
+        
+        .video-link:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 30px rgba(255, 217, 61, 0.6);
+            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+            border-color: #0b4bd3;
+        }
+        
+        /* Main Content */
+        .main-content {
+            padding: 80px 0;
+        }
+        
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 60px;
+            margin-bottom: 80px;
+            align-items: start;
+        }
+        
+        /* Image Section */
+        .image-section {
+            position: sticky;
+            top: 40px;
+        }
+        
+        .main-image {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(45deg, #2d2d30 0%, #1a1a1a 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #e2e8f0;
+            font-size: 1.2rem;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+            border: 2px solid #971a0a;
+        }
+        
+        .main-image:hover {
+            transform: translateY(-5px);
+        }
+        
+        .additional-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .thumbnail {
+            height: 120px;
+            background: linear-gradient(45deg, #2d2d30 0%, #404040 100%);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #e2e8f0;
+            font-size: 0.9rem;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            border: 1px solid #0b4bd3;
+        }
+        
+        .thumbnail:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Text Content */
+        .text-content {
+            background: linear-gradient(135deg, #2d2d30 0%, #1a1a1a 100%);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            border: 1px solid #404040;
+        }
+        
+        .text-content h2 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        
+        .text-content h3 {
+            font-size: 1.8rem;
+            color: #0b4bd3;
+            margin: 40px 0 20px 0;
+            font-weight: 500;
+        }
+        
+        .text-content p {
+            font-size: 1.15rem;
+            margin-bottom: 25px;
+            color: #cbd5e0;
+            text-align: justify;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d30 100%);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-left: 5px solid #0b4bd3;
+            border: 1px solid #971a0a;
+        }
+        
+        .highlight-box p {
+            color: #ffffff;
+        }
+        
+        /* Memorial Section */
+        .memorial-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+            color: #e2e8f0;
+            padding: 60px 50px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            margin-bottom: 60px;
+            border: 2px solid #0b4bd3;
+        }
+        
+        .memorial-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            font-weight: 600;
+            color: #0b4bd3;
+        }
+        
+        .memorial-text {
+            font-size: 1.3rem;
+            font-style: italic;
+            line-height: 1.8;
+            color: #ffffff;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Quotes Section */
+        .quotes-section {
+            background: linear-gradient(135deg, #2d2d30 0%, #1a1a1a 100%);
+            padding: 60px 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            margin-bottom: 60px;
+            border: 1px solid #404040;
+        }
+        
+        .quotes-section h2 {
+            font-size: 2.5rem;
+            color: #0b4bd3;
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 600;
+        }
+        
+        .quotes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .quote-card {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d30 100%);
+            color: #e2e8f0;
+            padding: 40px;
+            border-radius: 20px;
+            position: relative;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease;
+            border: 1px solid #971a0a;
+        }
+        
+        .quote-card:hover {
+            transform: translateY(-8px);
+            border-color: #ffffff;
+        }
+        
+        .quote-card::before {
+            content: '"';
+            font-size: 4rem;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            opacity: 0.3;
+            font-family: serif;
+            color: #0b4bd3;
+        }
+
+        
+        .quote-text {
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            color: #ffffff;
+        }
+        
+        .quote-source {
+            font-weight: 600;
+            opacity: 0.8;
+            color: #0b4bd3;
+        }
+        
+        /* Legacy Section */
+        .legacy {
+            background: linear-gradient(135deg, #2d2d30 0%, #404040 100%);
+            color: #e2e8f0;
+            padding: 60px 50px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            margin-bottom: 60px;
+            border: 1px solid #971a0a;
+        }
+        
+        .legacy h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            font-weight: 600;
+            color: #0b4bd3;
+        }
+        
+        .legacy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .legacy-item {
+            background: rgba(0,0,0,0.3);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid #971a0a;
+        }
+        
+        .legacy-number {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #0b4bd3;
+        }
+        
+        .legacy-text {
+            font-size: 1.1rem;
+            color: #ffffff;
+        }
+        
+        /* Footer */
+        .footer {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            color: #e2e8f0;
+            padding: 40px 0;
+            text-align: center;
+            border-top: 2px solid #4a90e2;
+        }
+        
+        .footer p {
+            font-size: 1rem;
+            opacity: 0.8;
+            margin-bottom: 30px;
+            color: #cbd5e0;
+        }
+        
+        .back-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ffd93d, #ff6b6b);
+            color: #1a1a1a;
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(255, 217, 61, 0.4);
+            margin-top: 10px;
+            border: 3px solid rgba(255, 215, 0, 0.5);
+        }
+        
+        .back-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 30px rgba(255, 217, 61, 0.6);
+            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+            border-color: #0b4bd3;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .image-section {
+                position: static;
+            }
+            
+            .text-content,
+            .quotes-section,
+            .legacy,
+            .memorial-section {
+                padding: 30px 25px;
+            }
+            
+            .quotes-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .quote-card {
+                padding: 25px;
+            }
+            
+            .legacy-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header {
+                padding: 40px 0;
+            }
+            
+            .main-content {
+                padding: 40px 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .text-content h2,
+            .quotes-section h2,
+            .legacy h2,
+            .memorial-section h2 {
+                font-size: 2rem;
+            }
+            
+            .additional-images {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .main-image img,
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* keeps proportions, fills frame */
+  border-radius: inherit; /* matches container’s rounded corners */
+  display: block;       /* removes inline spacing issues */
+}
+    </style>
 </head>
 <body>
-  
-
-    <!-- Title at the very top of the page -->
-    <div class="title">
-        <h1>Catholic Daily Content
-        </h1>
-        <h4>By William Cain </h4> 
-        <a href="about.html">Click here for more information</a>
-        
+    <div class="memorial-banner">
+        ★ In Loving Memory of a Conservative Champion ★
     </div>
-
-    <!-- Main container with image and buttons -->
-    <div class="container">
-        <!-- Buttons on the left side -->
-        <div class="buttons left">
-            <button class="btn btn1" onclick="window.location.href='dquote.html'">Daily Quote</button>
-            <br>
-            <br>
-            <button class="btn btn2" onclick="window.location.href='dsaint.html'">Daily Saint</button>
-            <br>
-            <br>
-            <button class="btn btn3" onclick="window.location.href='https://candycain5432.github.io/Project-Veritas/'">ASK DAILY FAITH!!!</button>
+    
+    <header class="header">
+        <div class="container">
+            <h1>Charlie Kirk</h1>
+            <div class="memorial-dates">1993 - 2025</div>
+            <p class="subtitle">Conservative Leader • Author • Political Activist • Forever Remembered</p>
+            <a href="https://www.youtube.com/watch?v=cRaFURsfKeo" class="video-link">▶ Watch Memorial Video</a>
         </div>
-
-        <!-- Image in the center -->
-        <div class="image-container">
-            <img src="https://i.postimg.cc/wj65nz25/Daily-Faith-transparent.png" alt="Central Image">
+    </header>
+    
+    <main class="main-content">
+        <div class="container">
+            <section class="memorial-section">
+                <h2>A Life Well Lived</h2>
+                <p class="memorial-text">
+                    “When people stop talking, that's when you get violence. That's when civil war happens.” -Charlie Kirk
+                </p>
+            </section>
+            
+           <div class="content-grid">
+    <div class="image-section">
+        <div class="main-image">
+            <img src="https://i.postimg.cc/NfVWX8vf/Charlie-Kirk-by-Gage-Skidmore-3.jpg" alt="Memorial Portrait Photo">
         </div>
-
-        <!-- Buttons on the right side -->
-        <div class="buttons right">
-            <button class="btn btn4" onclick="window.location.href='dverse.html'">Bible Verse</button>
-            <br>
-            <br>
-            <button class="btn btn5" onclick="window.location.href='dprayer.html'">Daily Prayer</button>
-            <br>
-            <br>
-            <button class="btn btn6" onclick="window.location.href='https://candycain5432.github.io/Prayer-wall/'">Prayer Wall</button>
+        <div class="additional-images">
+            <div class="thumbnail">
+                <img src="https://i.postimg.cc/0jYVFSHD/10kirk-shooting-profile-takeways2-wgmj-article-Large.jpg" alt="Final Speaking Event">
+            </div>
+            <div class="thumbnail">
+                <img src="https://i.postimg.cc/1z8JP2j9/86093580007-charlie-kirk-familyt-01.jpg" alt="With Family Photo">
+            </div>
+            <div class="thumbnail">
+                <img src="https://i.postimg.cc/v8f24RHT/3000.jpg" alt="TPUSA Legacy Photo">
+            </div>
+            <div class="thumbnail">
+                <img src="https://i.postimg.cc/GmhXgHPT/86097271007-uscp-82-ck-7-ckp-5-xeysmh-0-pht-original.jpg" alt="Memorial Service">
+            </div>
         </div>
     </div>
+                
+                <div class="text-content">
+                    <h2>Remembering Charlie</h2>
+                    <p>Charlie Kirk was more than a political activist—he was a beacon of hope for conservative values and a tireless advocate for the principles that made America great. His passion for educating young people and his unwavering commitment to constitutional principles touched millions of lives across the nation.</p>
+                    
+                    <div class="highlight-box">
+                        <p><strong>His Mission Lives On:</strong> Conservative education, political activism, free market economics, constitutional principles, and empowering the next generation to carry forward the torch of freedom.</p>
+                    </div>
+                    
+                    <h3>Early Years & Foundation</h3>
+                    <p>Born with an entrepreneurial spirit and deep love for America, Charlie's journey began in his teens when he founded Turning Point USA. His vision was simple yet profound: to educate and activate young conservatives to preserve the principles of freedom for future generations.</p>
+                    
+                    <h3 style="color: #971a0a;">A Legacy of Leadership</h3>
+                    <p>Through his radio show, books, and countless speaking engagements, Charlie became a voice of reason in turbulent times. His ability to articulate conservative principles with clarity and conviction inspired a generation of young Americans to stand up for their beliefs.</p>
+                    
+                    <p>Though his time with us was cut short, the impact of his work will continue to shape the conservative movement for generations to come. His dedication to truth, freedom, and the American dream remains an inspiration to all who knew him.</p>
+                </div>
+            </div>
+            
+            <section class="legacy">
+                <div class="container">
+                    <h2>His Lasting Impact</h2>
+                    <div class="legacy-grid">
+                        <div class="legacy-item">
+                            <div class="legacy-number">400+</div>
+                            <div class="legacy-text">College Chapters Established</div>
+                        </div>
+                        <div class="legacy-item">
+                            <div class="legacy-number">1M+</div>
+                            <div class="legacy-text">Lives Touched & Inspired</div>
+                        </div>
+                        <div class="legacy-item">
+                            <div class="legacy-number">∞</div>
+                            <div class="legacy-text">Eternal Legacy</div>
+                        </div>
+                        <div class="legacy-item">
+                            <div class="legacy-number">2025</div>
+                            <div class="legacy-text">Years of Impact</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="quotes-section">
+                <h2>Words to Remember</h2>
+                <div class="quotes-grid">
+                    <div class="quote-card">
+                        <div class="quote-text">The future of America depends on young people understanding and embracing the principles that made our nation great.</div>
+                        <div class="quote-source">— On Youth Engagement</div>
+                    </div>
+                    <div class="quote-card">
+                        <div class="quote-text">We must be willing to engage in the battle of ideas on college campuses across America.</div>
+                        <div class="quote-source">— On Campus Activism</div>
+                    </div>
+                    <div class="quote-card">
+                        <div class="quote-text">Conservative principles aren't just political positions—they're time-tested truths that lead to human flourishing.</div>
+                        <div class="quote-source">— On Conservative Philosophy</div>
+                    </div>
+                    <div class="quote-card">
+                        <div class="quote-text">Freedom requires eternal vigilance and active participation from every generation.</div>
+                        <div class="quote-source">— Final Message</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>In Loving Memory of Charlie Kirk (1993-2025) • His Legacy Lives On</p>
+            <a href="indexPLACEHOLDER.html" class="back-button">← Back to Daily Faith</a>
+        </div>
+    </footer>
 </body>
 </html>
