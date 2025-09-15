@@ -414,6 +414,21 @@
                 padding: 40px 0;
             }
         }
+
+        @media (max-width: 768px) {
+  .text-content p {
+    text-align: left;
+  }
+
+  .text-content p {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+}
+
+
+
         
         @media (max-width: 480px) {
             .container {
@@ -440,6 +455,22 @@
   border-radius: inherit; /* matches container’s rounded corners */
   display: block;       /* removes inline spacing issues */
 }
+
+@media (max-width: 768px) {
+  .main-image,
+  .thumbnail {
+    height: auto; /* Let the container grow with the image */
+    min-height: 300px; /* Or whatever height suits your layout */
+  }
+
+  .main-image img,
+  .thumbnail img {
+    height: auto; /* Prevent squishing */
+    max-height: 100%; /* Respect container size */
+    object-fit: cover;
+  }
+}
+
     </style>
 </head>
 <body>
