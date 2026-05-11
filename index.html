@@ -1,61 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8M98YJ96H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Y8M98YJ96H');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/gjXRmBhD/240-F-416442499-Ytct-TITf-S3-M7-SH27pi-B8-MSj-XMblu-Hngg.png">
-    <title>Daily Faith</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      min-height: 100%;
+      background: #0d1530;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 32px 24px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      max-width: 420px;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(28px, 7vw, 42px);
+      font-weight: 600;
+      color: #c9a449;
+      text-align: center;
+      letter-spacing: 0.01em;
+      line-height: 1.2;
+      text-shadow: 0 2px 16px rgba(201, 164, 73, 0.25);
+    }
+    .divider {
+      width: 48px;
+      height: 2px;
+      background: rgba(201, 164, 73, 0.4);
+      border-radius: 999px;
+    }
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      width: 100%;
+      margin-top: 8px;
+    }
+    a.btn {
+      display: block;
+      width: 100%;
+      background: #c9a449;
+      color: #0d1530;
+      font-family: 'DM Sans', -apple-system, sans-serif;
+      font-weight: 700;
+      font-size: clamp(15px, 4vw, 18px);
+      padding: 18px 32px;
+      border-radius: 999px;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(201, 164, 73, 0.35), 0 2px 8px rgba(0, 0, 0, 0.4);
+      transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+    a.btn.outline {
+      background: transparent;
+      color: #c9a449;
+      border: 2px solid rgba(201, 164, 73, 0.6);
+      box-shadow: 0 4px 20px rgba(201, 164, 73, 0.12), 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+    a.btn:hover {
+      background: #e0bb66;
+      color: #0d1530;
+      box-shadow: 0 12px 40px rgba(201, 164, 73, 0.45), 0 4px 12px rgba(0, 0, 0, 0.4);
+      transform: scale(1.02);
+    }
+    a.btn.outline:hover {
+      background: rgba(201, 164, 73, 0.12);
+      color: #e0bb66;
+    }
+    a.btn:active { transform: scale(0.97); }
+  </style>
 </head>
 <body>
-  
-
-    <!-- Title at the very top of the page -->
-    <div class="title">
-        <h1>Catholic Daily Content
-        </h1>
-        <h4>By William Cain </h4> 
-        <a href="about.html">Click here for more information</a>
-        
+  <div class="container">
+    <h1>The New and Improved Daily Faith</h1>
+    <div class="divider"></div>
+    <div class="btn-group">
+      <a class="btn" href="https://YOUR-LINK-HERE.com" target="_blank" rel="noopener">
+        Click for new website
+      </a>
+      <a class="btn outline" href="https://YOUR-TUTORIAL-LINK-HERE.com" target="_blank" rel="noopener">
+        Click for tutorial
+      </a>
     </div>
-
-    <!-- Main container with image and buttons -->
-    <div class="container">
-        <!-- Buttons on the left side -->
-        <div class="buttons left">
-            <button class="btn btn1" onclick="window.location.href='dquote.html'">Daily Quote</button>
-            <br>
-            <br>
-            <button class="btn btn2" onclick="window.location.href='dsaint.html'">Daily Saint</button>
-            <br>
-            <br>
-            <button class="btn btn3" onclick="window.location.href='https://candycain5432.github.io/Project-Veritas/'">ASK DAILY FAITH!!!</button>
-        </div>
-
-        <!-- Image in the center -->
-        <div class="image-container">
-            <img src="https://i.postimg.cc/wj65nz25/Daily-Faith-transparent.png" alt="Central Image">
-        </div>
-
-        <!-- Buttons on the right side -->
-        <div class="buttons right">
-            <button class="btn btn4" onclick="window.location.href='dverse.html'">Bible Verse</button>
-            <br>
-            <br>
-            <button class="btn btn5" onclick="window.location.href='dprayer.html'">Daily Prayer</button>
-            <br>
-            <br>
-            <button class="btn btn6" onclick="window.location.href='https://candycain5432.github.io/Prayer-wall/'">Prayer Wall</button>
-        </div>
-    </div>
+  </div>
 </body>
 </html>
